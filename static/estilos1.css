@@ -353,8 +353,8 @@ p {
         margin-bottom: 0;
     }
 
-    .coffee-img {
-        display: none;
+    .coffee-1 img {
+        width: 30%;
     }
 
     .services {
@@ -398,6 +398,10 @@ p {
 
     .blog-1 {
         padding: 0;
+    }
+
+    .blog-1 img{
+        width: 30%;
     }
 
     .footer {

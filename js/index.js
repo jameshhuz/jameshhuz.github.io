@@ -6,13 +6,6 @@ window.sr = ScrollReveal();
         distance: '-100px'
     });
 
-    sr.reveal('.header-content', {
-        duration: 2000,
-        origin: 'bottom',
-        distance: '-100px'
-    });
-
-
     sr.reveal('.blog-content', {
         duration: 2000,
         origin: 'bottom',
