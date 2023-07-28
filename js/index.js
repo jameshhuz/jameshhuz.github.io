@@ -1,7 +1,7 @@
 window.sr = ScrollReveal();
 
     sr.reveal('.menu', {
-        duration: 2000,
+        duration: 3000,
         origin: 'bottom',
         distance: '-100px'
     });
