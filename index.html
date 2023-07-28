@@ -8,6 +8,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="/static/estilo.css">
     <script src="/js/scrollreveal.js"></script>
+    <script src="https://kit.fontawesome.com/baeda1b60e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
@@ -23,6 +24,10 @@
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <button class="switch" id="switch">
+                        <span><i class="fa-regular fa-sun"></i></span>
+                        <span><i class="fa-regular fa-moon"></i></span>
+                    </button>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -35,7 +40,7 @@
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="/images/hero.png" alt="">
+                <img loading="lazy" src="/images/hero.png" alt="">
             </div>
             <h1><span>James Torres Lucas</span></h1>
             <h2><span class="sub">Ingeniero de Sistemas - Programador</span></h2>
@@ -242,7 +247,7 @@
             <div class="galeria">
                 <div class="proyecto">
                     <a href="/templates/proyecto.html">
-                        <img src="/images/p1.jpg" alt="">
+                        <img loading="lazy" src="/images/p1.jpg" alt="">
                         <div class="overlay">
                             <h3>Diseño Creativo</h3>
                             <p>Apple</p>
@@ -272,7 +277,7 @@
                 </div>
                 <!-- Mapa -->
                 <div class="col">
-                    <img src="/images/ubicacion.png" alt="">
+                    <img loading="lazy" src="/images/ubicacion.png" alt="">
                 </div>
             </div>
         </div>
