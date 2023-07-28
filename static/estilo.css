@@ -10,6 +10,11 @@ html{
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
 .contenido-banner h1 span {
     display: block;
     font-family: monospace;
@@ -176,85 +181,46 @@ body.dark .contenedor-header header nav ul li a{
 }
 
 /* SECCION I N I C I O */
-.inicio{
-    background: linear-gradient(to top, rgb(214 241 13 / 34%), rgb(242 1 1 / 0%)),
-    url(/images/fondo.jpg);
-    background-size: cover;
-    height: 100vh;
-    color: #fff;
+.inicio {
+    position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-body.dark .inicio{
-    background-color: #f8f8f8;
-    background: linear-gradient(to top, rgb(13 237 241 / 34%), rgb(242 1 1 / 0%)),
-    url(/images/fondo.jpg);
+    height: 100vh;
+    background: url('/images/background.png') no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.inicio .contenido-banner{
-    padding: 20px;
-    background-color: #1e2326;
-    max-width: 350px;
-    margin: auto;
-    text-align: center;
-    border-radius: 40px;
-    animation: movimiento 2.5s linear infinite;
-    overflow: hidden;
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #1b283a;
+    text-shadow: 2px 4px 5px #f9f9f9;
 }
 
-body.dark .inicio .contenido-banner{
-    background-color: #ffffff;
+
+.inicio img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 
-.inicio .contenido-banner img{
-    margin-top: 40px;
-    border: 10px solid #1CB698;
-    display: block;
-    width: 80%;
-    margin: auto;
-    border-radius: 100%;
-}
-.inicio .contenido-banner h1{
-    margin-top: 40px;
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 18px;
-    margin-left: 24px;
-}
-.inicio .contenido-banner h2{
-    font-size: 15px;
-    font-weight: normal;
-    margin-left: 15px;
+.inicio img#gate-left {
+    /*position: fixed;*/
+    transform: translateX(-282px);
 }
 
-body.dark .inicio .contenido-banner h2{
-    color: #0b0b0b;
+.inicio img#gate-right {
+    /*position: fixed;*/
+    transform: translateX(305px);
 }
 
-.inicio .contenido-banner .redes a{
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 40px 5px;
-    font-size: 20px;
-    transition: .3s;
-}
-
-body.dark .inicio .contenido-banner .redes a{
-    color: #000;
-    border: 1px solid #000;
-}
-
-.inicio .contenido-banner .redes a:hover{
-    background-color: #1CB698;
-}
+/* SECCION SOBREMI*/
 .sobremi{
     background-color: #1e2326;
     color: #fff;
