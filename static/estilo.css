@@ -178,7 +178,7 @@ body.dark .contenedor-header header nav ul li a{
 /* SECCION I N I C I O */
 .inicio{
     background: linear-gradient(to top, rgb(214 241 13 / 34%), rgb(242 1 1 / 0%)),
-    url(/images/fondo.jpg);
+    url(/images/layer-base.png);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -189,7 +189,7 @@ body.dark .contenedor-header header nav ul li a{
 body.dark .inicio{
     background-color: #f8f8f8;
     background: linear-gradient(to top, rgb(13 237 241 / 34%), rgb(242 1 1 / 0%)),
-    url(/images/fondo.jpg);
+    url(/images/layer-base.png);
     background-size: cover;
 }
 
@@ -581,7 +581,7 @@ body.dark .skills .skill .barra-skill{
 }
 /* SECCION PORTFOLIO */
 .portfolio{
-    background-color: #252A2E;
+    background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
